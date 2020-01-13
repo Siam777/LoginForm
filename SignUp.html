@@ -1,0 +1,41 @@
+<div ng-controller="loginCtrl">
+  <div class=panel panel-default>
+      <div class="wrapper-md">
+      	<div class="panel-body">
+      		<div class="row">
+      			<form action="/" id="SignUp" name="SignUp" class="form-signUp">
+              <div class="form-div">
+              <div class=form-input>
+                <label>  UserName</label>
+                 <div class=form-group>
+                  <input type="text" name="Register.UserName" id="UserName" ng-model="Register.UserName" required style="color:black">
+                 </div>
+               </div>  
+               <div class="form-input">
+	            <label>Password</label>
+              <div class=form-group>
+                <input type="password" name="password" id="password" ng-model="Register.Password" required 
+                style="color:black">
+              </div>
+	             </div>
+                <div class="form-input">
+              <label>Reconfirm Password</label>
+              <div class=form-group>
+                <input type="password" name="password" id="password" ng-model="Register.ReconfirmPassword" required
+                style="color:black">
+              </div>
+               </div>
+               <div class="form-button"> 	               
+                  <button type="button" ng-disabled="SignUp.$invalid" ng-click="RegisterForm(Register)" style="cursor:pointer" 
+                 class="btn btn-danger">
+                     Submit
+               </button>
+               <div>
+             </div>
+              </form>
+      		</div>
+      	</div>
+      </div>      
+   </div>
+<div>
+	

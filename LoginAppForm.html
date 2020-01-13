@@ -3,11 +3,30 @@
       <div class="wrapper-md">
       	<div class="panel-body">
       		<div class="row">
-      			<form action="/" id="myLogin">
-	             UserName: <input type="text" name="UserName" id="UserName" ng-model="UserName"><br/>
-	             Password: <input type="password" name="password" id="password" ng-model="Password">
-	             <button type="button" ng-click="submit()" style="cursor:pointer">Login</button>
-                 </form>
+      			<form action="/" id="myLogin" name="login" class="form">
+              <div class="form-div">
+              <div class=form-input>
+                <label>  UserName</label>
+                 <div class=form-group>
+                  <input type="text" name="UserName" id="UserName" ng-model="UserName" required style="color:black">
+                 </div>
+               </div>  
+               <div class="form-input">
+	            <label>Password</label>
+              <div class=form-group>
+                <input type="password" name="password" id="password" ng-model="Password" required style="color:black">
+              </div>
+	             </div>
+               <div class="form-button"> 
+	               <button type="button" ng-disabled="login.$invalid" ng-click="submit()" style="cursor:pointer" 
+                 class="btn btn-danger">Log In</button>
+                  <button type="button" ng-click="signup()" style="cursor:pointer" 
+                 class="btn btn-danger">
+                     Sign Up
+               </button>
+               <div>
+             </div>
+              </form>
       		</div>
       	</div>
       </div>      

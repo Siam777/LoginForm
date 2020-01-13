@@ -1,0 +1,27 @@
+
+.form{
+	background-image:  linear-gradient(to bottom right, Green, GreenYellow,forestgreen);
+	width:40%;
+	margin-top:15%;
+	margin-left: 20%;
+	z-index:2;
+}
+.form-div{
+	margin-left:30%;
+}
+.form-input{
+   padding-top: 5px;
+   padding-bottom: 2px;
+   color:white;
+}
+.form-button{
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+.form-signUp{
+	background-image:  linear-gradient(to bottom right, Blue, dodgerblue,forestgreen);
+	width:40%;
+	margin-top:15%;
+	margin-left: 20%;
+	z-index:2;
+}
